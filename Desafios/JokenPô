@@ -1,0 +1,149 @@
+/**
+ * DESAFIO: CRIAR JOGO JOKENPÔ
+ *
+ */
+
+const read = require('readline-sync')
+
+let user, comput
+console.clear()
+console.log("    ___       _             ______     ")
+console.log("   |_  |     | |            | ___ \\    ")
+console.log("     | | ___ | | _____ _ __ | |_/ /__  ")
+console.log("     | |/ _ \\| |/ / _ \\ '_ \\|  __/ _ \\ ")
+console.log(" /\\__/ / (_) |   <  __/ | | | | | (_) |")
+console.log(" \\____/ \\___/|_|\\_\\___|_| |_\\_|  \\___/ ")
+console.log(" ")
+console.log("1. Pedra")
+console.log("2. Papel")
+console.log("3. Tesoura")
+console.log()
+
+user = Number(read.question("Sua vez! Escolha uma das opcoes:  "))
+
+console.log()
+comput = Math.floor(Math.random() * 3) // 0 1 2
+switch (comput) {
+    case 0:
+        console.log(`PEDRA`)
+        break
+    case 1:
+        console.log(`PAPEL`)
+        break
+    case 2:
+        console.log(`TESOURA`)
+        break
+
+}
+console.log()
+
+if (user === 1 && comput === 0) {
+    console.log("    Você          Computador")
+console.log("    ____         ____")
+console.log("  _/  _ \\      _/    \\")
+console.log(" / _ - _ \\    / _ - _ \\")
+console.log(" \\_______/    \\_______/ ")
+console.log()
+console.log("   ┌─┐┌┬┐┌─┐┌─┐┌┬┐┌─┐ ")
+console.log("   ├┤ │││├─┘├─┤ │ ├┤  ")
+console.log("   └─┘┴ ┴┴  ┴ ┴ ┴ └─┘ ")
+} else if (user === 2 && comput === 1) {
+    console.log("     Você          Computador")
+console.log("    _____         _____")
+console.log("   O_____O       O_____O")
+console.log("   /     /       /     /")
+console.log("  /____ /       /____ /")
+console.log(" O_____O       O_____O")
+console.log()
+console.log("   ┌─┐┌┬┐┌─┐┌─┐┌┬┐┌─┐ ")
+console.log("   ├┤ │││├─┘├─┤ │ ├┤  ")
+console.log("   └─┘┴ ┴┴  ┴ ┴ ┴ └─┘ ")
+} else if (user === 3 && comput === 2) {
+    console.log("     Você          Computador")
+console.log("    _    _       _    _")
+console.log("   (_)  / )     (_)  / )")
+console.log("     | (_/        | (_/")
+console.log("    _+/          _+/")
+console.log("   //|\\         //|\\")
+console.log("  // ||        // ||")
+console.log(" (/  |/       (/  |/")
+console.log()
+console.log("   ┌─┐┌┬┐┌─┐┌─┐┌┬┐┌─┐ ")
+console.log("   ├┤ │││├─┘├─┤ │ ├┤  ")
+console.log("   └─┘┴ ┴┴  ┴ ┴ ┴ └─┘ ")
+} else if (user === 1 && comput === 2) {
+    console.log("    Você          Computador")
+console.log("                  _   _")
+console.log("    ____         (_) / )")
+console.log("  _/  _ \\         | (_/ ")
+console.log(" / _ - _ \\       _+/  ")
+console.log(" \\_______/      //|\\")
+console.log("               // ||")
+console.log("              (/  |/ ")
+console.log()
+console.log("   ┬  ┬┌─┐┌┐┌┌─┐┌─┐┬ ┬")
+console.log("   └┐┌┘├┤ ││││  ├┤ │ │")
+console.log("    └┘ └─┘┘└┘└─┘└─┘└─┘")
+} else if (user === 2 && comput === 0) {
+    console.log("     Você          Computador")
+console.log("    _____         ____")
+console.log("   O_____O      _/  _ \\")
+console.log("   /     /     / _ - _ \\")
+console.log("  /____ /      \\_______/")
+console.log(" O_____O")
+console.log()
+console.log("   ┬  ┬┌─┐┌┐┌┌─┐┌─┐┬ ┬")
+console.log("   └┐┌┘├┤ ││││  ├┤ │ │")
+console.log("    └┘ └─┘┘└┘└─┘└─┘└─┘")
+} else if (user === 3 && comput === 1) {
+    console.log("     Você          Computador")
+console.log("    _    _")
+console.log("   (_)  / )       _____")
+console.log("     | (_/       O_____O")
+console.log("    _+/          /     /")
+console.log("   //|\\         /____ /")
+console.log("  // ||         O_____O")
+console.log(" (/  |/ ")
+console.log()
+console.log("   ┬  ┬┌─┐┌┐┌┌─┐┌─┐┬ ┬")
+console.log("   └┐┌┘├┤ ││││  ├┤ │ │")
+console.log("    └┘ └─┘┘└┘└─┘└─┘└─┘")
+} else if (user === 1 && comput === 1) {
+    console.log("    Você          Computador")
+console.log(".   ____         _____")
+console.log("  _/  _ \\       O_____O")
+console.log(" / _ - _ \\      /     /")
+console.log(" \\_______/      /____ /")
+console.log("                O_____O")
+console.log()                   
+console.log("   ┌─┐┌─┐┬─┐┌┬┐┌─┐┬ ┬ ")
+console.log("   ├─┘├┤ ├┬┘ ││├┤ │ │ ")
+console.log("   ┴  └─┘┴└──┴┘└─┘└─┘ ")
+} else if (user === 2 && comput === 2) {
+    console.log("     Você          Computador")
+console.log("                  _    _")
+console.log("    _____        (_)  / )")
+console.log("   O_____O         | (_/")
+console.log("   /     /        _+/")
+console.log("  /____ /        //|\\")
+console.log(" O_____O        // ||")
+console.log("               (/  |/")
+console.log()
+console.log("   ┌─┐┌─┐┬─┐┌┬┐┌─┐┬ ┬ ")
+console.log("   ├─┘├┤ ├┬┘ ││├┤ │ │ ")
+console.log("   ┴  └─┘┴└──┴┘└─┘└─┘ ")
+} else if (user === 3 && comput === 0) {
+    console.log("     Você          Computador")
+console.log("    _    _")
+console.log("   (_)  / )       ____")
+console.log("     | (_/      _/  _ \\")
+console.log("    _+/        / _ - _ \\")
+console.log("   //|\\        \\_______/")
+console.log("  // ||")
+console.log(" (/  |/ ")
+console.log()
+console.log("   ┌─┐┌─┐┬─┐┌┬┐┌─┐┬ ┬ ")
+console.log("   ├─┘├┤ ├┬┘ ││├┤ │ │ ")
+console.log("   ┴  └─┘┴└──┴┘└─┘└─┘ ")
+}
+console.log()
